@@ -1,0 +1,36 @@
+h1{
+  color: red;
+  font-size: 12pt;
+}
+ul, #menu {
+  list-style-type: none;
+}
+
+#menu {
+  margin: 0;
+  padding: 0;
+}
+
+.outside {
+  cursor: pointer;
+  user-select: none;
+}
+
+.outside::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.outside-down::before {
+  transform: rotate(90deg);
+}
+
+.inside {
+  display: none;
+}
+
+.active {
+  display: block;
+}
